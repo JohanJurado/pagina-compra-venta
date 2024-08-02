@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3F9ED;
+  }
+
+section {
+	width: auto;
+}
+
+  body form {
+	width: 100%;
+    max-width: 400px;
+    gap: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 0 2rem #ccceceaf;
+    border-radius: 1rem;
+  }
+  body form .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body form .title h2 {
+    color: #13C1AC;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+  }
+  body form .title hr {
+    width: 70%;
+    margin: 1rem 0rem 1.2rem 0rem;
+    border-color: #13C1AC;
+	color: #13C1AC;
+  }
+  body form div {
+    width: 90%;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    color: #13C1AC;
+    margin-bottom: -0.7rem;
+    font-weight: 500;
+  }
+  body form input {
+    width: 80%;
+    background-color: #F7F7F7;
+    outline: none;
+    border: 0.5px solid #13C1AC;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.2s ease-in-out;
+    caret-color: #13C1AC;
+    color: #242424;
+  }
+  body form input:hover {
+    background-color: #feffff98;
+    cursor: pointer;
+    border-color: #1ce9d1;
+    box-shadow: rgba(102, 233, 211, 0.315) 0 0 8px;
+    cursor: text;
+  }
+  body form input:focus {
+    border-color: #17b9a6;
+    box-shadow: rgba(102, 233, 211, 0.767) 0 0 10px;
+  }
+  body form input::-moz-placeholder {
+    color: #242424;
+  }
+  body form input::placeholder {
+    color: #242424;
+  }
+  body form button {
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: #13C1AC;
+    color: #F7F7F7;
+  }
+  body form button:hover {
+    border-color: 13C1AC;
+    background-color: transparent;
+    transition: 0.3s ease;
+    color: #13C1AC;
+    box-shadow: #13C1AC 0 0 10px;
+    cursor: pointer;
+  }/*# sourceMappingURL=registrarse.css.map */

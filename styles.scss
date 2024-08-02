@@ -1,0 +1,442 @@
+$pacifico: 'Pacifico', cursive;
+$montserrat: 'Montserrat', sans-serif;
+$verde1: #13C1AC;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 2rem 3rem;
+    box-shadow: 0rem 0.2rem 2rem #9f999933;
+    background-color: white;
+    z-index: 1;
+
+    .logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 0.8rem;
+
+        img {
+            width: 3rem;
+        }
+
+        p {
+            font-family: $pacifico; 
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #13C1AC;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 0.8rem;
+        
+        button { // iniciar sesion
+            border: 2px solid $verde1;
+            border-radius: 1.5rem;
+            background-color: white;
+            padding: 0.3rem 2rem;
+            color: $verde1;
+            font-weight: 500;
+            transition: .2s ease-in;
+
+            &:hover {
+                background-color: $verde1;
+                color: white;
+            }
+        }
+
+        .subir-producto {
+            background-color: $verde1;
+            color: white;
+            padding: 0.3rem 1.1rem;
+            font-weight: 600;
+
+            &:hover {
+                background-color: white;
+                color: $verde1;
+            }
+        }
+
+    }
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    padding: 9rem 7rem 3rem 7rem;
+
+    .texto-banner {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+         
+        p {
+            font-family: $montserrat;
+            font-weight: 800;
+            font-size: 3.5rem;
+            color: #11A291;
+            margin: 3.5rem 0rem;
+            line-height: 4rem;
+        }
+
+        form {
+            display: flex;
+            border: 3px solid $verde1;
+            padding: 0.5rem 1.5rem;
+            border-radius: 1.4rem;
+            padding: 0.2rem;
+            justify-content: space-between;
+
+            input {
+                margin-left: 1rem;
+                border: 0px;
+                background-color: white;
+                color: black;
+                font-weight: 600;
+                outline: none;
+                flex: 1;
+            }
+
+            button {
+                border: 2px solid $verde1;
+                border-radius: 1rem;
+                padding: 0.3rem 1.5rem;
+                font-weight: 600;
+                color: white;
+                background-color: $verde1;
+                transition: .2s ease;
+                margin-left: 1rem;
+
+                &:hover {
+                    background-color: #0daf9c;
+                }
+            }
+        }
+    }
+
+    .img-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 28rem;
+        }
+    }
+}
+
+.productos {
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 10rem 6rem 10rem;
+    flex-direction: column;
+
+    .img-productos {
+        position: absolute;
+        width: 200%;
+        top: 0rem;
+        transform: translateX(-50%);
+    }
+
+    .titulo {
+        width: 100%;
+        position: relative;
+        color: #465452;
+        font-family: $montserrat;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .subtitulo {
+        width: 100%;
+        position: relative;
+        font-family: $montserrat;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #465452;
+        margin-bottom: 2.5rem;
+
+        }
+
+        .cosas {
+            width: 100%;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+
+            .ob {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                background-color: white;
+                border-radius: 1rem;
+                padding: 2rem 3.5rem;
+                margin: 1.5rem 0rem;
+                box-shadow: 0rem 0.5rem 1.5rem rgba(172, 166, 166, 0.6);
+                border: 0.5px solid rgba(172, 166, 166, 0.397);
+                font-weight: 700;
+                color: #465452;
+                font-size: 1.1rem;
+                transition: .3s ease;
+
+                &:hover {
+                    box-shadow: 0rem 0.2rem 1.2rem rgba(172, 166, 166, 0.925);
+                    color: black;
+                }
+
+                img {
+                    position: relative;
+                    width: 5rem;
+                }
+            }
+    }
+}
+
+.beneficios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 10rem 5rem 10rem;
+    font-family: $montserrat;
+    background-image: linear-gradient(white, #EDFAF1);
+    color: #424242;
+
+    h2 {
+        font-weight: 700;
+        margin-bottom: 4.5rem;
+    }
+
+    strong {
+        color: $verde1;
+        font-weight: 700;
+    }
+
+    .texto {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.1rem;
+        font-weight: 500;
+        
+
+        h6 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+
+            strong {
+                font-weight: 700;
+                color: $verde1;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.ventas-productos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 6rem 8rem;
+
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .title {
+            position: relative;
+            font-family: $montserrat;
+            color: #767a7a;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            position: relative;
+            flex-direction: row;
+            gap: 2rem;
+            
+            .caja {
+
+                display: flex;
+                flex: 1;
+                align-items: start;
+                position: relative;
+                flex-direction: column;
+                gap: 0.5rem;
+                transition: .5s ease;
+
+                &:hover {
+                    transform: translateY(-2%);
+                }
+
+                .img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    overflow: hidden;
+                    object-fit: cover;
+                    height: 17rem;
+                    border: 1px solid #eceff19d;
+                    background-color: #eceff19d;
+                    border-radius: 1.5rem;
+                    transition: .3s ease;
+    
+                    &:hover {
+                        box-shadow: 0.2rem 0.5rem 0.8rem rgba(196, 190, 190, 0.548);
+                    }
+    
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    font-family: $montserrat;
+                    margin-left: 0.2rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+}
+
+.llamada-vender {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 10rem 5rem 10rem;
+
+    .contenedor {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5rem 3rem;
+        border: 5px solid #13C1AC;
+        border-radius: 2rem;
+    }
+
+    .img {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        object-fit: cover;
+        border: 2px solid #13C1AC;
+        border-radius: 1.8rem;
+        box-shadow: 0.5rem 0.5rem 1rem #17d8c14d;
+
+        img {
+            width: 25rem;
+        }
+    }
+
+    .llamada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        color: #465452;
+        text-align: center;
+        height: 100%;
+        margin-left: 3rem;
+
+        h2 {
+            font-family: $montserrat;
+            font-weight: 700;
+            font-size: 2.2rem;
+        }
+
+        p {
+            font-family: $montserrat;
+            font-weight: 500;
+            font-size: 1.4rem;
+        }
+
+        hr {
+            width: 40%;
+            color: #0a0a0a;
+            border: 3px solid #0a0a0a;
+        }
+
+        button {
+            width: 70%;
+            padding: 1.1rem 2.1rem;
+            border-radius: 0.8rem;
+            margin-top: 0.5rem;
+            font-family: $montserrat;
+            font-weight: 700;
+            font-size: 1.5rem;
+            background-color: #13C1AC;
+            border-color: #13C1AC;
+            color: white;
+            box-shadow: none;
+            transition: .3s ease;
+
+            &:hover {
+                border-color: black;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    background-color: #EFFAF3;
+
+    small {
+        font-family: $montserrat;
+        color: #424242;
+    }
+
+    p {
+        font-family: $pacifico; 
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #13C1AC;
+    }
+}

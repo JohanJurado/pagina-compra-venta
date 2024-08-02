@@ -1,0 +1,788 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+body::-webkit-scrollbar {
+
+  -webkit-appearance: none;
+
+  background-color: #d6d4d4;
+
+}
+
+
+
+body::-webkit-scrollbar-thumb {
+
+  background-color: #F4F4F4;
+
+}
+
+
+
+nav {
+
+  width: 100%;
+
+  display: flex;
+
+  position: fixed;
+
+  padding: 2rem 3rem;
+
+  box-shadow: 0rem 0.2rem 2rem rgba(159, 153, 153, 0.2);
+
+  background-color: white;
+
+  z-index: 1;
+
+}
+
+nav .logo {
+
+  display: flex;
+
+  justify-content: start;
+
+  align-items: center;
+
+  gap: 0.8rem;
+
+}
+
+nav .logo img {
+
+  width: 3rem;
+
+}
+
+nav .logo p {
+
+  font-family: "Pacifico", cursive;
+
+  font-size: 1.6rem;
+
+  font-weight: 400;
+
+  color: #13C1AC;
+
+}
+
+nav .buttons {
+
+  display: flex;
+
+  justify-content: end;
+
+  align-items: center;
+
+  gap: 0.8rem;
+
+}
+
+nav .buttons button {
+
+  border: 2px solid #13C1AC;
+
+  border-radius: 1.5rem;
+
+  background-color: white;
+
+  padding: 0.3rem 2rem;
+
+  color: #13C1AC;
+
+  font-weight: 500;
+
+  transition: 0.2s ease-in;
+
+}
+
+nav .buttons button:hover {
+
+  background-color: #13C1AC;
+
+  color: white;
+
+}
+
+nav .buttons .subir-producto {
+
+  background-color: #13C1AC;
+
+  color: white;
+
+  padding: 0.3rem 1.1rem;
+
+  font-weight: 600;
+
+}
+
+nav .buttons .subir-producto:hover {
+
+  background-color: white;
+
+  color: #13C1AC;
+
+}
+
+
+
+.banner {
+
+  width: 100%;
+
+  display: flex;
+
+  padding: 9rem 7rem 3rem 7rem;
+
+}
+
+.banner .texto-banner {
+
+  display: flex;
+
+  justify-content: start;
+
+  align-items: start;
+
+  flex-direction: column;
+
+}
+
+.banner .texto-banner p {
+
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 800;
+
+  font-size: 3.5rem;
+
+  color: #11A291;
+
+  margin: 3.5rem 0rem;
+
+  line-height: 4rem;
+
+}
+
+.banner .texto-banner form {
+
+  display: flex;
+
+  border: 3px solid #13C1AC;
+
+  padding: 0.5rem 1.5rem;
+
+  border-radius: 1.4rem;
+
+  padding: 0.2rem;
+
+  justify-content: space-between;
+
+}
+
+.banner .texto-banner form input {
+
+  margin-left: 1rem;
+
+  border: 0px;
+
+  background-color: white;
+
+  color: black;
+
+  font-weight: 600;
+
+  outline: none;
+
+  flex: 1;
+
+}
+
+.banner .texto-banner form button {
+
+  border: 2px solid #13C1AC;
+
+  border-radius: 1rem;
+
+  padding: 0.3rem 1.5rem;
+
+  font-weight: 600;
+
+  color: white;
+
+  background-color: #13C1AC;
+
+  transition: 0.2s ease;
+
+  margin-left: 1rem;
+
+}
+
+.banner .texto-banner form button:hover {
+
+  background-color: #0daf9c;
+
+}
+
+.banner .img-banner {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.banner .img-banner img {
+
+  width: 28rem;
+
+}
+
+
+
+.productos {
+
+  width: 100%;
+
+  display: flex;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 5rem 10rem 6rem 10rem;
+
+  flex-direction: column;
+
+}
+
+.productos .img-productos {
+
+  position: absolute;
+
+  width: 200%;
+
+  top: 0rem;
+
+  transform: translateX(-50%);
+
+}
+
+.productos .titulo {
+
+  width: 100%;
+
+  position: relative;
+
+  color: #465452;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 700;
+
+  font-size: 2rem;
+
+  text-align: center;
+
+}
+
+.productos .subtitulo {
+
+  width: 100%;
+
+  position: relative;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 500;
+
+  font-size: 1.2rem;
+
+  text-align: center;
+
+  color: #465452;
+
+  margin-bottom: 2.5rem;
+
+}
+
+.productos .cosas {
+
+  width: 100%;
+
+  display: flex;
+
+  position: relative;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  flex-wrap: wrap;
+
+  gap: 2rem;
+
+}
+
+.productos .cosas .ob {
+
+  display: flex;
+
+  flex-direction: column;
+
+  position: relative;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  background-color: white;
+
+  border-radius: 1rem;
+
+  padding: 2rem 3.5rem;
+
+  margin: 1.5rem 0rem;
+
+  box-shadow: 0rem 0.5rem 1.5rem rgba(172, 166, 166, 0.6);
+
+  border: 0.5px solid rgba(172, 166, 166, 0.397);
+
+  font-weight: 700;
+
+  color: #465452;
+
+  font-size: 1.1rem;
+
+  transition: 0.3s ease;
+
+}
+
+.productos .cosas .ob:hover {
+
+  box-shadow: 0rem 0.2rem 1.2rem rgba(172, 166, 166, 0.925);
+
+  color: black;
+
+}
+
+.productos .cosas .ob img {
+
+  position: relative;
+
+  width: 5rem;
+
+}
+
+
+
+.beneficios {
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 5rem 10rem 5rem 10rem;
+
+  font-family: "Montserrat", sans-serif;
+
+  background-image: linear-gradient(white, #EDFAF1);
+
+  color: #424242;
+
+}
+
+.beneficios h2 {
+
+  font-weight: 700;
+
+  margin-bottom: 4.5rem;
+
+}
+
+.beneficios strong {
+
+  color: #13C1AC;
+
+  font-weight: 700;
+
+}
+
+.beneficios .texto {
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 1.1rem;
+
+  font-weight: 500;
+
+}
+
+.beneficios .texto h6 {
+
+  font-weight: 700;
+
+  font-size: 1.1rem;
+
+  margin-bottom: 1rem;
+
+}
+
+.beneficios .texto h6 strong {
+
+  font-weight: 700;
+
+  color: #13C1AC;
+
+  text-decoration: underline;
+
+}
+
+
+
+.ventas-productos {
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  gap: 4rem;
+
+  padding: 6rem 8rem;
+
+}
+
+.ventas-productos div {
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+}
+
+.ventas-productos div .title {
+
+  position: relative;
+
+  font-family: "Montserrat", sans-serif;
+
+  color: #767a7a;
+
+  font-weight: 700;
+
+  margin-bottom: 2rem;
+
+}
+
+.ventas-productos div div {
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: start;
+
+  justify-content: center;
+
+  position: relative;
+
+  flex-direction: row;
+
+  gap: 2rem;
+
+}
+
+.ventas-productos div div .caja {
+
+  display: flex;
+
+  flex: 1;
+
+  align-items: start;
+
+  position: relative;
+
+  flex-direction: column;
+
+  gap: 0.5rem;
+
+  transition: 0.5s ease;
+
+}
+
+.ventas-productos div div .caja:hover {
+
+  transform: translateY(-2%);
+
+}
+
+.ventas-productos div div .caja .img {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+  -o-object-fit: cover;
+
+     object-fit: cover;
+
+  height: 17rem;
+
+  border: 1px solid rgba(236, 239, 241, 0.6156862745);
+
+  background-color: rgba(236, 239, 241, 0.6156862745);
+
+  border-radius: 1.5rem;
+
+  transition: 0.3s ease;
+
+}
+
+.ventas-productos div div .caja .img:hover {
+
+  box-shadow: 0.2rem 0.5rem 0.8rem rgba(196, 190, 190, 0.548);
+
+}
+
+.ventas-productos div div .caja .img img {
+
+  width: 100%;
+
+}
+
+.ventas-productos div div .caja p {
+
+  font-family: "Montserrat", sans-serif;
+
+  margin-left: 0.2rem;
+
+  font-weight: 600;
+
+}
+
+
+
+.llamada-vender {
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0rem 10rem 5rem 10rem;
+
+}
+
+.llamada-vender .contenedor {
+
+  width: 90%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 2.5rem 3rem;
+
+  border: 5px solid #13C1AC;
+
+  border-radius: 2rem;
+
+}
+
+.llamada-vender .img {
+
+  display: flex;
+
+  flex: 1;
+
+  justify-content: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+  -o-object-fit: cover;
+
+     object-fit: cover;
+
+  border: 2px solid #13C1AC;
+
+  border-radius: 1.8rem;
+
+  box-shadow: 0.5rem 0.5rem 1rem rgba(23, 216, 193, 0.3019607843);
+
+}
+
+.llamada-vender .img img {
+
+  width: 25rem;
+
+}
+
+.llamada-vender .llamada {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex: 1;
+
+  color: #465452;
+
+  text-align: center;
+
+  height: 100%;
+
+  margin-left: 3rem;
+
+}
+
+.llamada-vender .llamada h2 {
+
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 700;
+
+  font-size: 2.2rem;
+
+}
+
+.llamada-vender .llamada p {
+
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 500;
+
+  font-size: 1.4rem;
+
+}
+
+.llamada-vender .llamada hr {
+
+  width: 40%;
+
+  color: #0a0a0a;
+
+  border: 3px solid #0a0a0a;
+
+}
+
+.llamada-vender .llamada button {
+
+  width: 70%;
+
+  padding: 1.1rem 2.1rem;
+
+  border-radius: 0.8rem;
+
+  margin-top: 0.5rem;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 700;
+
+  font-size: 1.5rem;
+
+  background-color: #13C1AC;
+
+  border-color: #13C1AC;
+
+  color: white;
+
+  box-shadow: none;
+
+  transition: 0.3s ease;
+
+}
+
+.llamada-vender .llamada button:hover {
+
+  border-color: black;
+
+}
+
+
+
+footer {
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 1rem 4rem;
+
+  background-color: #EFFAF3;
+
+}
+
+footer small {
+
+  font-family: "Montserrat", sans-serif;
+
+  color: #424242;
+
+}
+
+footer p {
+
+  font-family: "Pacifico", cursive;
+
+  font-size: 1.6rem;
+
+  font-weight: 400;
+
+  color: #13C1AC;
+
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+  background-color: #F4F4F4;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d6d4d4;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 2rem 4rem;
+  box-shadow: 0rem 0.2rem 2rem rgba(159, 153, 153, 0.2);
+  background-color: white;
+  z-index: 2;
+}
+nav div {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+nav div p {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #13C1AC;
+}
+nav .logo {
+  display: flex;
+  flex: 1;
+  justify-content: start;
+  align-items: center;
+}
+nav .logo img {
+  width: 3.2rem;
+}
+nav .end {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.5rem;
+}
+nav .end button {
+  border: 2px solid #13C1AC;
+  border-radius: 1rem;
+  background-color: #13C1AC;
+  padding: 0.3rem 1rem;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s ease-in;
+}
+nav .end button:hover {
+  background-color: white;
+  color: #13C1AC;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+main .lateral {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: start;
+  background-color: white;
+  top: 7rem;
+  width: 25%;
+  height: 85vh;
+  padding: 3rem 3rem 2rem 2.5rem;
+  gap: 0.3rem;
+  z-index: 1;
+  box-shadow: 0.2rem 0.5rem 2rem rgba(159, 153, 153, 0.2);
+}
+main .lateral h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #13C1AC;
+  margin-left: 1rem;
+}
+main .lateral .eleccion {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 0.35rem 0.35rem 0.35rem 1rem;
+  gap: 0.85rem;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+}
+main .lateral .eleccion:hover {
+  border: 1px solid rgba(159, 153, 153, 0.368627451);
+  box-shadow: 0rem 0.2rem 0.4rem rgba(159, 153, 153, 0.2);
+}
+main .lateral .eleccion:hover a {
+  color: black;
+}
+main .lateral .eleccion img {
+  width: 2rem;
+}
+main .lateral .eleccion a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #465452;
+}
+main .pantalla {
+  display: flex;
+  position: relative;
+  top: 7rem;
+  width: 75%;
+  margin-left: 25%;
+  min-height: 81.7vh;
+  flex-direction: column;
+}
+main .pantalla .title {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  color: #767a7a;
+  font-weight: 700;
+  margin: 2.5rem 3rem 2rem 3.3rem;
+}
+main .pantalla .productos {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem 3.5rem 3rem 3.5rem;
+  flex-wrap: wrap;
+  gap: 2.7rem;
+}
+main .pantalla .productos .caja {
+  display: flex;
+  width: 12rem;
+  align-items: start;
+  position: relative;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: 0.5s ease;
+}
+main .pantalla .productos .caja:hover {
+  transform: translateY(-2%);
+}
+main .pantalla .productos .caja .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 17rem;
+  border: 1px solid rgba(236, 239, 241, 0.6156862745);
+  background-color: rgba(236, 239, 241, 0.6156862745);
+  border-radius: 1.5rem;
+  transition: 0.3s ease;
+}
+main .pantalla .productos .caja .img:hover {
+  box-shadow: 0.2rem 0.5rem 0.8rem rgba(196, 190, 190, 0.548);
+}
+main .pantalla .productos .caja .img img {
+  width: 100%;
+}
+main .pantalla .productos .caja p {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 0.2rem;
+  font-weight: 600;
+}
+main .pantalla footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: #EFFAF3;
+}
+main .pantalla footer small {
+  font-family: "Montserrat", sans-serif;
+  color: #424242;
+}
+main .pantalla footer p {
+  font-family: "Pacifico", cursive;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #13C1AC;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-header p {
+  margin: 0.2rem 0rem 0rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #595c5c;
+  font-weight: 700;
+}
+
+.modal-body {
+  width: 100%;
+  display: flex;
+  padding: 1.2rem 2rem 2.5rem 2rem !important;
+}
+.modal-body .imagen-prod {
+  flex: 1;
+  padding: 0rem 0.75rem 0rem 0rem;
+}
+.modal-body .imagen-prod .caja {
+  display: flex;
+  width: 12rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: 0.5s ease;
+}
+.modal-body .imagen-prod .caja:hover {
+  transform: translateY(-1.5%) !important;
+}
+.modal-body .imagen-prod .caja .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 20rem !important;
+  border: 1px solid rgba(236, 239, 241, 0.6156862745);
+  background-color: rgba(236, 239, 241, 0.6156862745);
+  border-radius: 1.5rem;
+  transition: 0.3s ease;
+  box-shadow: 0 0 0 !important;
+}
+.modal-body .imagen-prod .caja .img img {
+  width: 100%;
+}
+.modal-body .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+  padding: 0rem 0rem 0rem 0.75rem;
+}
+.modal-body .info label {
+  margin-left: 0.3rem;
+  margin-bottom: -0.6rem;
+  font-size: 0.8rem;
+  color: #595c5c;
+}
+.modal-body .info label a {
+  color: #595c5c;
+}
+.modal-body .info .input, .modal-body .info select {
+  padding: 0.5rem 1rem;
+  background-color: rgba(241, 242, 243, 0.862745098);
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.modal-body .info .input:hover, .modal-body .info select:hover {
+  border-color: #abafaf;
+}
+.modal-body .info .input:focus, .modal-body .info select:focus {
+  border-color: #767a7a;
+}
+.modal-body .info .botones {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 0.3rem;
+}
+.modal-body .info .botones .btn-danger {
+  flex: 0.65;
+}
+.modal-body .info .botones .btn-success {
+  flex: 1.35;
+}/*# sourceMappingURL=vendedores.css.map */
